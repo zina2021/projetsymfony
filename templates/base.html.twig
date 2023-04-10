@@ -1,0 +1,427 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>{% block title %}EnergyBox | Dashboard{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('./public/images/icon/L.ico')}}" />
+
+    {% block stylesheets %}
+    <!-- Fontfaces CSS-->
+    <link href="{{ asset('css/font-face.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('C:/xampp/htdocs/projetZin/public/vendor/font-awesome-4.7/css/font-awesome.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/mdi-font/css/material-design-iconic-font.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/font-awesome-5/css/fontawesome-all.min.css')}}" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="{{ asset('vendor/bootstrap-4.1/bootstrap.min.css')}}" rel="stylesheet" media="all">
+
+
+    <!-- Vendor CSS-->
+    <link href="{{ asset('vendor/animsition/animsition.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/wow/animate.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/css-hamburgers/hamburgers.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/slick/slick.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/select2/select2.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/perfect-scrollbar/perfect-scrollbar.css')}}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+        <link href="{{ asset('css/theme.css')}}" rel="stylesheet" media="all">
+
+    <!-- Calendar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.css" integrity="sha256-uq9PNlMzB+1h01Ij9cx7zeE2OR2pLAfRw3uUUOOPKdA=" crossorigin="anonymous">
+
+
+    {% endblock %}
+
+</head>
+
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" >
+                            <img src=" {{ asset('images/logo/L.png') }}" alt="LogoGymBlack" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="active">
+                            <a class="js-arrow" href="">
+                                <i class="fas fa-home"></i>Home</a>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-user"></i>Utilisateurs</a>
+                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                <li>
+                                    <a href="#">Ajouter Utilisateur</a>
+                                </li>
+                                <li>
+                                    <a href="#">Afficher Utilisateurs</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-table"></i>Cours</a>
+                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                <li>
+                                    <a href="">Ajouter Activité</a>
+                                </li>
+                                <li>
+                                    <a href="">Afficher Activités</a>
+                                </li>
+                                <li>
+                                    <a href="">Ajouter Cours</a>
+                                </li>
+                                <li>
+                                    <a href="">Afficher Cours</a>
+                                </li>
+                                <li>
+                                    <a href="">Ajouter Cours</a>
+                                </li>
+                                <li>
+                                    <a href="">Afficher Cours</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-list"></i>Abonnements</a>
+                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                <li>
+                                    <a href="#">Ajouter Abonnement</a>
+                                </li>
+                                <li>
+                                    <a href="#">Afficher Abonnements</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ajouter Pack</a>
+                                </li>
+                                <li>
+                                    <a href="#">Afficher Packs</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-desktop"></i>Produit</a>
+                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                <li>
+                                    <a href="#">Ajouter Materiel</a>
+                                </li>
+                                <li>
+                                    <a href="#">Afficher Produit</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ajouter Charge</a>
+                                </li>
+                                <li>
+                                    <a href="#">Afficher Charges</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ajouter Fournisseur</a>
+                                </li>
+                                <li>
+                                    <a href="#">Afficher Fournisseurs</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-trophy"></i><span><a href="{{ path('app_evenement_index') }}">Evenement</a></span></a>
+                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                <li>
+                                    <a href="#">Ajouter Evenement</a>
+                                </li>
+                                <li>
+                                    <a href="#">Afficher Evenement</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        
+
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-newspaper"></i>Casting</a>
+                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                <li>
+                                    <a href="#">Ajouter Casting</a>
+                                </li>
+                                <li>
+                                    <a href="#">Afficher Casting</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="">
+                    <img src="{{ asset('images/logo/L.png') }} " height="90" width="100"  alt="LogoGymBlack" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active">
+                            <a class="js-arrow" href="">
+                                <i class="fas fa-home"></i>Home</a>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-user"></i>Utilisateurs</a>
+                                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                    <li>
+                                        <a href="#">Ajouter Utilisateur</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Afficher Utilisateurs</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-table"></i>Cours</a>
+                                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                    <li>
+                                        <a href="">Ajouter Activité</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Afficher Activités</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Ajouter Cours</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Afficher Cours</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Ajouter Cours</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Afficher Cours</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-list"></i>Abonnements</a>
+                                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                    <li>
+                                        <a href="#">Ajouter Abonnement</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Afficher Abonnements</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ajouter Pack</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Afficher Packs</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-desktop"></i>Produit</a>
+                                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                    <li>
+                                        <a href="#">Ajouter Materiel</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Afficher Produit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ajouter Charge</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Afficher Charges</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ajouter Fournisseur</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Afficher Fournisseurs</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-trophy"></i>Evenement</a>
+                                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                    <li>
+                                        <a href="{{ path('app_evenement_new') }}">Ajouter Evenement</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ path('app_evenement_index') }}">Afficher Evenement</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-newspaper"></i>Casting</a>
+                                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                    <li>
+                                        <a href="#">Ajouter Plat</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Afficher Plats</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ajouter Menu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Afficher Menus</a>
+                                    </li>
+                                </ul>
+                        </li>
+                         <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-calendar"></i>Location</a>
+                                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                    <li>
+                                        <a href="{{ path('app_location_new') }}">Ajouter Location</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ path('app_location_index') }}">Afficher Location</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-home"></i>Salle</a>
+                                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                    <li>
+                                        <a href="{{ path('app_salle_new') }}">Ajouter Salle</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ path('app_salle_index') }}">Afficher Salle</a>
+                                    </li>
+                                </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="" method="POST">
+                                <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for datas &amp; reports..." />
+                                <button class="au-btn--submit" type="submit">
+                                    <i class="zmdi zmdi-search"></i>
+                                </button>
+                            </form>
+                            <div class="header-button">
+                                <div class="noti-wrap">
+                                    <div class="noti__item js-item-menu">
+                                        <i class="zmdi zmdi-comment-more"></i>
+                                        <span class="quantity">1</span>
+                                        <div class="mess-dropdown js-dropdown">
+                                        
+                                        </div>
+                                    </div>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+
+    <!-- MAIN CONTENT-->
+    <div class="page-wrapper">
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                    <!-- START WHITE BACKGROUND-->
+                        <div class="map-data m-b-40">
+                            {% block body %}
+
+                            {% endblock %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+{% block javascripts %}
+    <!-- Jquery JS-->
+    <script src="{{ asset('vendor/jquery-3.2.1.min.js')}}" ></script>
+    <script src="{{ asset('vendor/jquery-3.2.1.min.js')}}" ></script>
+    <!-- Bootstrap JS-->
+    <script src="{{ asset('vendor/bootstrap-4.1/popper.min.js')}}" ></script>
+    <script src="{{ asset('vendor/bootstrap-4.1/bootstrap.min.js')}}" ></script>
+    <!-- Vendor JS-->
+    <script src="{{ asset('vendor/slick/slick.min.js')}}" ></script>
+    <script src="{{ asset('vendor/wow/wow.min.js')}}" ></script>
+    <script src="{{ asset('vendor/animsition/animsition.min.js')}}" ></script>
+    <script src="{{ asset('vendor/bootstrap-progressbar/bootstrap-progressbar.min.js')}}" ></script>
+    <script src="{{ asset('vendor/counter-up/jquery.waypoints.min.js')}}" ></script>
+    <script src="{{ asset('vendor/counter-up/jquery.counterup.min.js')}}" ></script>
+    <script src="{{ asset('vendor/circle-progress/circle-progress.min.js')}}" ></script>
+    <script src="{{ asset('vendor/perfect-scrollbar/perfect-scrollbar.js')}}" ></script>
+    <script src="{{ asset('vendor/chartjs/Chart.bundle.min.js')}}" ></script>
+    <script src="{{ asset('vendor/select2/select2.min.js')}}" ></script>
+
+
+    <!-- Main JS-->
+    <script src="{{ asset('js/main.js')}}" ></script>
+
+
+    <!-- Calendar -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.0/main.min.js" integrity="sha256-DBxkGZLxKsLKhz054qUpBqtotG00r9AELGpSigJujLg=" crossorigin="anonymous"></script>
+
+
+    </script>
+
+{% endblock %}
+
+</html>
